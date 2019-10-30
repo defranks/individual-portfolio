@@ -45,12 +45,15 @@ footer{
 }
 
 .flex-container{
+  display: -webkit-box; /*needed to work for Safari*/
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   padding:30px;
-  justify-content:space-between;
-  align-content: center;
+  -webkit-box-pack: space-between; /*needed to work for Safari*/
+    justify-content:space-between;
+  -webkit-box-align: center; /*needed to work for Safari*/
+    align-items: center;
 }
 
 .item{
@@ -177,14 +180,19 @@ a:hover{
   grid-template-rows: 1fr 8fr;
 }
 .flex-container{
+  display: -webkit-box;
   display:flex;
   flex-direction:row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap:wrap;
   width:100%;
   padding:0px;
   grid-column-start: 2;
   grid-row-start: 2;
+  -webkit-box-pack: space-between; /*needed to work for Safari*/
   justify-content:space-between;
+  -webkit-box-align: center;
   align-content: center;
   margin-bottom:40px;
 }

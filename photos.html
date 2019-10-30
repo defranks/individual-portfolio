@@ -11,41 +11,46 @@
   </head>
 <body>
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
-  <div class="container">
-  <div class="logo"><a href="index.html">Destiny</a></div>
-  <div class="hamburger" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-  <div class="nav">
-    <ul>
-      <li><a href="index.html">Illustrations</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </div>
+
+
   <header id="main"></header>
-  <div class="gallerycol1">
-    <img src="images/photos/csa-1.jpg" class ="gallery" alt="3 men posing and smiling"/>
-    <img src="images/photos/csa-3.jpg" class ="gallery" alt="2 men in a serious conversation"/>
-    <img src="images/photos/saci.jpg" class ="gallery" alt="photo of a stomach and neck"/>
-    <img src="images/photos/yfm-2.JPG" class ="gallery" alt="A woman smiling with facepaint on"/>
-    <img src="images/photos/yfm-4.JPG" class ="gallery" alt="A bag with produce inside that says Ypsilanti Farmers Market on the front"/>
-  </div>
-  <div class="gallerycol2">
-    <img src="images/photos/csa-2.jpg" class ="gallery" alt="An older woman smiling"/>
-    <img src="images/photos/yfm-1.JPG" class ="gallery" alt="A woman smiling"/>
-    <img src="images/photos/saci-2.jpg" class ="gallery" alt="An assortment of photos of a bed, a naked woman, a hand, text, and curtains"/>
-    <img src="images/photos/yfm-3.JPG" class ="gallery" alt="A woman and her young child smiling while looking at each other"/>
-    <img src="images/photos/yfm-5.JPG" class ="gallery" alt="An assortment of apples and potatoes"/>
+
+<div class="container">
+
+    <div class="logo"><a href="index.html">Destiny</a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Illustrations</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+</div>
+<!-- <div class="hamburger" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div> -->
+<!-- </div> -->
+<div class="flex-container">
+  <img class ="item" src="images/photos/csa-3.jpg" alt="2 men in a serious conversation"/>
+  <img class ="item" src="images/photos/csa-1.jpg" alt="3 men posing and smiling"/>
+  <img class ="item" src="images/photos/saci.jpg" alt="photo of a stomach and neck"/>
+  <img class ="item" src="images/photos/yfm-2.JPG" alt="A woman smiling with facepaint on"/>
+  <img class ="item" src="images/photos/yfm-4.JPG" alt="A bag with produce inside that says Ypsilanti Farmers Market on the front"/>
+  <img class ="item" src="images/photos/csa-2.jpg" alt="An older woman smiling"/>
+  <img class ="item" src="images/photos/yfm-1.JPG" alt="A woman smiling"/>
+  <img class ="item" src="images/photos/saci-2.jpg" alt="An assortment of photos of a bed, a naked woman, a hand, text, and curtains"/>
+  <img class ="item" src="images/photos/yfm-3.JPG" alt="A woman and her young child smiling while looking at each other"/>
+  <img class ="item" src="images/photos/yfm-5.JPG" alt="An assortment of apples and potatoes"/>
   </div>
 <footer>
-  <p>illustrations photos resume about<br/>
+  <p><a href="index.html">Illustrations</a>
+      <a href="photos.html">Photos</a>
+  <a href="resume.html">Resume</a>
+  <a href="about.html">About</a><br/>
   @franks.design defranks@umich.edu 269/228-6215</p>
 </footer>
-</div>
+</div></div>
 <script>
 function myFunction(x) {
   x.classList.toggle("change");

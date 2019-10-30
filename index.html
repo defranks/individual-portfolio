@@ -11,42 +11,47 @@
   </head>
 <body>
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
-  <div class="container">
-  <div class="logo"><a href="index.html">Destiny</a></div>
-  <div class="hamburger" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-  <div class="nav">
-    <ul>
-      <li><a href="index.html">Illustrations</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </div>
-  <header id="main"></header>
-  <div class="gallerycol1">
-    <img src="images/illustrations/day-illustration.png" class ="gallery"/>
-    <img src="images/illustrations/freeze.png" class ="gallery" alt="A character standing still with snowflakes around her"/>
-    <img src="images/illustrations/flight.png" class ="gallery" alt="A character running away"/>
-    <img src="images/illustrations/soccer.png" class ="gallery" alt="A character wearing soccer gear holding a ball"/>
-    <img src="images/illustrations/shlumped-1.jpg" class ="gallery" alt="A person hunched over next to a photo of a bed"/>
-  </div>
-  <div class="gallerycol2">
-    <img src="images/illustrations/night-illustration.png" class ="gallery" alt="A couple of people hand drawn with the word Night underneath them"/>
-    <img src="images/illustrations/fight.png" class ="gallery" alt="A character with boxing gloves throwing a punch"/>
-    <img src="images/illustrations/dog.png" class ="gallery" alt="A happy dog with his tongue out"/>
 
-    <img src="images/illustrations/mountain.png" class ="gallery" alt="A small person climbing up a large mountain"/>
-    <img src="images/illustrations/shlumped-2.jpg" class="gallery" alt="People walking with the word shlumped over their heads"/>
+
+  <header id="main"></header>
+
+<div class="container">
+
+    <div class="logo"><a href="index.html">Destiny</a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Illustrations</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+</div>
+<!-- <div class="hamburger" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div> -->
+<!-- </div> -->
+<div class="flex-container">
+    <img class="item" src="images/illustrations/day-illustration.png" alt = "A large group of people hand drawn with the word Day underneath them"/>
+    <img class="item" src="images/illustrations/freeze.png" alt="A character standing still with snowflakes around her"/>
+    <img class="item" src="images/illustrations/flight.png" alt="A character running away"/>
+    <img class="item" src="images/illustrations/soccer.png" alt="A character wearing soccer gear holding a ball"/>
+    <img class="item" src="images/illustrations/shlumped-1.jpg" alt="A person hunched over next to a photo of a bed"/>
+    <img class="item" src="images/illustrations/night-illustration.png" "gallery" alt="A couple of people hand drawn with the word Night underneath them"/>
+    <img class="item" src="images/illustrations/fight.png" alt="A character with boxing gloves throwing a punch"/>
+    <img class="item" src="images/illustrations/dog.png" alt="A happy dog with his tongue out"/>
+
+    <img class="item" src="images/illustrations/mountain.png" alt="A small person climbing up a large mountain"/>
+    <img class="item" src="images/illustrations/shlumped-2.jpg" alt="People walking with the word shlumped over their heads"/>
   </div>
 <footer>
-  <p>illustrations photos resume about<br/>
+  <p><a href="index.html">Illustrations</a>
+      <a href="photos.html">Photos</a>
+  <a href="resume.html">Resume</a>
+  <a href="about.html">About</a><br/>
   @franks.design defranks@umich.edu 269/228-6215</p>
 </footer>
-</div>
+</div></div>
 <script>
 function myFunction(x) {
   x.classList.toggle("change");

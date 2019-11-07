@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151765287-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151765287-1');
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <title>Photos</title>
   </head>
 <body>
@@ -21,7 +31,7 @@
     <div class="nav">
       <ul>
         <li><a href="index.html">Illustrations</a></li>
-        <li><a href="photos.html">Photos</a></li>
+        <li><a class="current" href="photos.html">Photos</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
@@ -51,10 +61,5 @@
   @franks.design defranks@umich.edu 269/228-6215</p>
 </footer>
 </div></div>
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-</script>
 </body>
 </html>

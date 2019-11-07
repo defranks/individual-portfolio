@@ -1,35 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151765287-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151765287-1');
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <title>About</title>
   </head>
 <body>
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
   <div class="container">
-  <div class="logo"><h1><a href="index.html">Destiny</a></h1></div>
 
+    <div class="logo"><a href="index.html">Destiny</a></div>
   <div class="nav">
     <ul>
       <li><a href="index.html">Illustrations</a></li>
       <li><a href="photos.html">Photos</a></li>
       <li><a href="resume.html">Resume</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a class="current" href="about.html">About</a></li>
     </ul>
   </div>
   <header id="main"></header>
   <div class="flex-container">
   <div class="headshot">
-    <img src="images/about/headshot.jpg" alt="decorative"/>
+    <div class="content">
+      <div class="front">
+    </div><div class="back">
   </div>
+</div></div>
 
   <div class="about-text">
-  <h1>Hello!</h1><p><br> I'm Destiny Franks. My pronouns are she/her and I'm a designer from ann arbor, mi. I typically do UX Design, but I love illustrating and taking photos as well. This site houses all of my fun side projects. <br><br>
+  <h2>Hello!</h2><p><br> I'm Destiny Franks. My pronouns are she/her and I'm a designer from Ann Arbor, MI. I typically do UX Design, but I love illustrating and taking photos as well. This site houses all of my fun side projects. <br><br>
 
   contact info:<br>
   phone: 269/228-6215<br>
@@ -38,13 +52,13 @@
   you can also feel free to reach out to me below!</p></div>
   <form action="https://formspree.io/defranks@umich.edu" method = "post">
     <fieldset>
-    <legend>Reach out!</legend>
+    <legend><h2>Reach out!</h2></legend>
     <label for="name">Name</label>
     <input type="text" id = "name"><br/>
     <label>Email: <input type="email" value = "email@email.com"></label>
     <label><input type="text" value = "Type your message here..."></label>
 
-    <br/><br><input type = "submit" value = "Save!">
+    <br/><br><input type = "submit" value = "Send">
   </fieldset>
 </form></div>
 <footer>
@@ -52,10 +66,6 @@
   @franks.design defranks@umich.edu 269/228-6215</p>
 </footer>
 </div>
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-</script>
+
 </body>
 </html>

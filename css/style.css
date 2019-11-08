@@ -5,7 +5,6 @@ html{
 body{
   font-family: 'Rubik', sans-serif;
   background-color:white;
-  /* #FBF9F1 */
 }
 p{
   line-height: 1.5em;
@@ -20,7 +19,7 @@ h2{
 legend{
   font-size:30px;
 }
-.footer a{
+footer a{
   line-height: 1.5em;
   font-size:16px;
   color:black;
@@ -96,6 +95,7 @@ footer{
   height: 110px;
   font-size: 16px;
   color: black;
+  background-color:#F3EEE6;
   text-align:center;
   grid-row-start: 6;
   grid-column: 1/ span 3;
@@ -103,15 +103,16 @@ footer{
   align-self: left;
 }
 
-
 #iframe{
   margin-bottom:50px;
   height:110vw;
   width:100%;
 }
+
 .about-text{
   margin-top:30px;
 }
+
 .headshot {
   width: 400px;
   height: 400px;
@@ -164,7 +165,8 @@ hr {
   background-image: url('../images/about/headshotoil.jpg');
 }
 footer p{
-  padding-top: 15px;
+  padding-top: 30px;
+  padding-bottom:30px;
   grid-column-start: 2;
   text-align:center;
 }

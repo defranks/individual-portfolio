@@ -16,6 +16,10 @@ a{
 h2{
   font-size:30px;
 }
+
+legend{
+  font-size:30px;
+}
 .footer a{
   line-height: 1.5em;
   font-size:16px;
@@ -33,7 +37,20 @@ footer a:visited{
 *:focus{
   border: blue;
 }
-
+form{
+  padding-top:50px;
+  padding-bottom:50px;
+  justify-self:center;
+}
+.parallax {
+  background-image: url('../images/about/para.jpg');
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100vw;
+}
 h1{
   font-style:bold;
   font-size: 40px;
@@ -48,27 +65,58 @@ h1{
 .current-link {
     color:"orange";
 }
+input{
+
+  width:80vw;
+  grid-column-start: 2;
+  margin-bottom: 20px;
+  padding:15px;
+  border-top: 0px solid white;
+  border-bottom: 1px solid black;
+  border-left: 0px solid white;
+  border-right: 0px solid white;
+  color:#595959;
+  font-size:14px;
+
+}
+
+input[type=submit]{
+  width:30vw;
+  border:0px solid #CCCCCC;
+  background-color:black;
+  color:white;
+  text-decoration:bold;
+}
+input[type=submit]:hover{
+  background-color:#878787;
+}
 footer{
   bottom: 0;
   width: 100%;
-  height: 300px;
-  background-image: url('../images/footer.png');
-  background-repeat: repeat;
-  background-size:contain;
+  height: 110px;
   font-size: 16px;
   color: black;
   text-align:center;
   grid-row-start: 6;
   grid-column: 1/ span 3;
   justify-content:left;
-  align-self: center;
-}
-.headshot {
-  width: 300px;
-  height: 300px;
-  perspective: 500px;
+  align-self: left;
 }
 
+
+#iframe{
+  margin-bottom:50px;
+  height:110vw;
+  width:100%;
+}
+.about-text{
+  margin-top:30px;
+}
+.headshot {
+  width: 400px;
+  height: 400px;
+  perspective: 500px;
+}
 .content {
   position: absolute;
   width: 100%;
@@ -94,7 +142,7 @@ footer{
   text-align: center;
   font-size: 60px;
   background-image: url('../images/about/headshot.jpg');
-  background-size: 300px 300px;
+  background-size: 400px 400px;
   border-radius: 5px;
   backface-visibility: hidden;
 }
@@ -114,11 +162,11 @@ hr {
   color: white;
   transform: rotateY( 180deg );
   background-image: url('../images/about/headshotoil.jpg');
-  background-size: 300px 300px;
 }
 footer p{
   padding-top: 15px;
   grid-column-start: 2;
+  text-align:center;
 }
 
 .flex-container{
@@ -135,9 +183,10 @@ footer p{
 
 .item{
   width:100%;
-  height:auto;
+  height:300px;
   margin-bottom:10px;
   box-shadow: 0px 0px 10px 2px #E1E1E1;
+  object-fit: cover;
 }
 .item:hover{
   filter:grayscale(100%);
@@ -149,16 +198,12 @@ a:visited{
   text-decoration: none;
 }
 a:hover{
-  background-image: linear-gradient(180deg,#F1F1F1,#F1F1F1);
+  background-image: linear-gradient(180deg,#eadcc5,#eadcc5);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 10px;
   }
 
-/* a:active{
-  background-color:#a3ceff;
-  color:orange;
-} */
 .nav{
   margin-bottom:20px;
   justify-self:center;
@@ -166,20 +211,13 @@ a:hover{
   text-align:center;
 }
 
-.headshot img{
-  width:400px;
-  height:400px;
-  object-fit: cover;
-}
 .nav li{
   display: inline;
   padding-right:15px;
 }
-/* .logo{
-  margin-bottom:15px;
-  margin-right:auto;
-} */
+
 .logo{
+  margin-top:30px;
   margin-bottom:30px;
   justify-self:center;
   align-self:center;
@@ -225,12 +263,50 @@ a:hover{
     box-shadow: 0px 0px 10px 2px #E1E1E1;
     object-fit: cover;
   }
+  .about-text{
+    width:52%;
+  }
+  .headshot {
+    width: 300px;
+    height: 300px;
+    perspective: 500px;
+    align-self:center;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .parallax{
+    width:100vw;
+  }
+  .headshot:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+
+  .headshot .content:focus {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/about/headshot.jpg');
+    background-size: 300px 300px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
 }
 @media screen and (min-width:800px){
 
-/* .hamburger{
-  display:none !important;
-} */
+
 .container{
   background-color:white;
   display:grid;
@@ -255,7 +331,9 @@ a:hover{
   align-content: top;
   margin-bottom:40px;
 }
-
+.parallax{
+  width:60vw;
+}
 .item{
   width:48%;
   height:400px;
@@ -270,10 +348,37 @@ a:hover{
   justify-self:left;
   align-self:center;
 }
+input{
+
+  width:56vw;
+  grid-column-start: 2;
+  margin-bottom: 20px;
+  padding:15px;
+}
+
+input[type=submit]{
+  width:10vw;
+}
+input[type=submit]:hover{
+  background-color:#878787;
+}
 .logo a{
   font-size: 48px;
   font-weight:900;
   color:black;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
 
 .nav{
@@ -291,11 +396,6 @@ a:hover{
   height:80vw;
   width:100%;
 }
-.headshot img{
-  width:400px;
-  height:400px;
-  object-fit: cover;
-}
 
 .about-text{
   justify-self:left;
@@ -303,14 +403,7 @@ a:hover{
   width:50%;
 }
 
-form{
-  padding-top:50px;
-}
-input{
-  width:100%;
-  grid-column-start: 2;
-  margin-bottom: 20px;
-}
+
 
 @media screen and (prefers-reduced-motion: reduce){
   html{

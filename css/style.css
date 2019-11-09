@@ -123,7 +123,6 @@ footer{
   width: 100%;
   height: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
   transition: transform 1s;
   transform-style: preserve-3d;
 }
@@ -147,18 +146,7 @@ footer{
   border-radius: 5px;
   backface-visibility: hidden;
 }
-hr {
-    display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: .5px;
-    border-color:grey;
-    background-color:grey;
-}
+
 .back {
   color: white;
   transform: rotateY( 180deg );
@@ -425,5 +413,23 @@ input[type=submit]:hover{
 
   .skip a:focus{
     top:0;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0s;
+    transform-style: preserve-3d;
+  }
+
+  .headshot:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0s;
+  }
+  .item:hover{
+    filter:grayscale(100%);
+    transition: all 0s;
+    transform:scale(1.1);
   }
 }

@@ -212,6 +212,7 @@ a:hover{
   justify-self:center;
   align-self:center;
   text-align:center;
+  width:100px;
 }
 
 .logo a{

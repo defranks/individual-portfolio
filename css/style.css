@@ -53,8 +53,8 @@ form{
 h1{
   font-style:bold;
   font-size: 40px;
-  font-weight:900;
-  font-family: 'Rubik', sans-serif;
+  font-family: soleil,sans-serif;
+font-weight: 700;
 }
 .nav a{
   text-decoration:none;
